@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – Outboard Buddy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; color: #0a4f6e; }
+    h2 { font-size: 1.2rem; margin-top: 2.5rem; margin-bottom: 0.75rem; color: #0a4f6e; border-bottom: 2px solid #e5e7eb; padding-bottom: 4px; }
+    h3 { font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.25rem; }
+    p, li { font-size: 0.95rem; }
+    a { color: #0a4f6e; }
+    .meta { color: #666; font-size: 0.85rem; margin-bottom: 2rem; }
+    .email-link { display: inline-block; background: #0a4f6e; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 8px; }
+    .email-link:hover { background: #073a52; }
+
+    /* Contact form */
+    form { margin-top: 1rem; }
+    .field { margin-bottom: 1.25rem; }
+    label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; color: #333; }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: #222;
+    }
+    input:focus, textarea:focus { outline: 2px solid #0a4f6e; outline-offset: 1px; border-color: transparent; }
+    textarea { resize: vertical; min-height: 120px; }
+    button[type="submit"] {
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover { background: #ea580c; }
+
+    /* FAQ */
+    .faq-item { margin-bottom: 1.25rem; }
+    .faq-item dt { font-weight: 600; color: #0a4f6e; }
+    .faq-item dd { margin: 0.25rem 0 0 0; color: #444; }
+
+    /* Footer */
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; font-size: 0.85rem; color: #666; }
+    footer a { color: #0a4f6e; }
+  </style>
+</head>
+<body>
+
+  <h1>Outboard Buddy Support</h1>
+  <p class="meta">Marine Imports UK Ltd &mdash; <a href="mailto:support@outboardbuddy.net">support@outboardbuddy.net</a></p>
+
+  <p>Need help with Outboard Buddy? We're here to assist. Browse the FAQ below or send us a message and we'll get back to you as quickly as possible.</p>
+
+  <a href="mailto:support@outboardbuddy.net" class="email-link">Email Support</a>
+
+  <h2>Contact Us</h2>
+  <form action="mailto:support@outboardbuddy.net" method="post" enctype="text/plain">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required placeholder="Your name" />
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required placeholder="your@email.com" />
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" required placeholder="Describe your question or issue…"></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h2>Frequently Asked Questions</h2>
+  <dl>
+    <div class="faq-item">
+      <dt>How do I reset my password?</dt>
+      <dd>Use the <strong>Forgot Password</strong> option on the login screen. You'll receive a reset link by email within a few minutes.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>How do I upgrade my account?</dt>
+      <dd>Visit your account settings within the app and tap <strong>Upgrade</strong>, or contact <a href="mailto:support@outboardbuddy.net">support@outboardbuddy.net</a> and we'll help you directly.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>How do I report incorrect engine information?</dt>
+      <dd>Use the contact form above and include the engine model, year, and a description of what appears to be incorrect. Our team reviews all reports.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>How do I cancel a subscription?</dt>
+      <dd>You can cancel at any time by contacting us at <a href="mailto:support@outboardbuddy.net">support@outboardbuddy.net</a>. Cancellations take effect at the end of your current billing period.</dd>
+    </div>
+  </dl>
+
+  <footer>
+    <p><strong>Outboard Buddy</strong> &mdash; Marine Imports UK Ltd</p>
+    <p>&copy; 2026 Outboard Buddy. All rights reserved.</p>
+    <p><a href="/privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
