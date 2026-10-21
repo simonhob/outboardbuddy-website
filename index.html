@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outboard Buddy – diagnostics for outboard technicians</title>
+  <meta name="description" content="Outboard Buddy is a diagnostic assistant for outboard technicians and parts staff. Give it the engine and the symptom; it gives you the next test, the spec and the part for that exact engine." />
+  <meta property="og:title" content="Outboard Buddy" />
+  <meta property="og:description" content="Diagnostics for outboard technicians, for the faults that don't throw a code." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://outboardbuddy.net/" />
+  <meta name="theme-color" content="#081522" />
+  <link rel="icon" href="https://app.outboardbuddy.net/favicon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root { --bg:#081522; --panel:#0e1f33; --line:#1d3350; --text:#e8eef5; --muted:#9fb0c3; --accent:#3fa7ff; --accent-ink:#06243d; }
+    html, body { margin:0; background:var(--bg); color:var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 28px 0 8px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-weight: 700; letter-spacing: .2px; font-size: 18px; color: var(--text); }
+    .brand:hover { text-decoration:none; }
+    nav a { margin-left: 18px; color: var(--muted); font-size: 15px; }
+    .hero { padding: 56px 0 40px; }
+    h1 { font-size: clamp(32px, 5.5vw, 48px); line-height: 1.1; margin: 0 0 16px; letter-spacing:-.5px; }
+    .lede { font-size: clamp(18px, 2.4vw, 21px); color: var(--muted); max-width: 640px; margin: 0 0 28px; }
+    .cta { display:flex; flex-wrap:wrap; gap: 12px; }
+    .btn { display:inline-block; padding: 12px 20px; border-radius: 8px; font-weight: 600; border:1px solid var(--line); color: var(--text); }
+    .btn:hover { text-decoration:none; border-color: var(--accent); }
+    .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+    section { padding: 36px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 22px; margin: 0 0 14px; }
+    p { margin: 0 0 14px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: var(--panel); border:1px solid var(--line); border-radius: 10px; padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 17px; }
+    .card p { margin: 0; color: var(--muted); }
+    ol.steps { padding-left: 0; list-style:none; counter-reset: s; margin: 0; }
+    ol.steps li { counter-increment: s; position:relative; padding-left: 48px; margin-bottom: 16px; }
+    ol.steps li::before { content: counter(s); position:absolute; left:0; top:0; width:34px; height:34px; border-radius:50%; background:var(--accent); color:var(--accent-ink); font-weight:700; display:flex; align-items:center; justify-content:center; }
+    ol.steps strong { display:block; }
+    .quiet { color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: 14px; }
+    footer .links a { margin-right: 18px; }
+    footer p { margin: 10px 0 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">Outboard Buddy</a>
+      <nav><a href="https://app.outboardbuddy.net/signin">Sign in</a><a href="/support.html">Support</a></nav>
+    </header>
+
+    <div class="hero">
+      <h1>Diagnostics for outboard technicians, for the faults that don't throw a code.</h1>
+      <p class="lede">Give it the engine and the symptom. It gives you the next test, the spec and the part for that exact engine. If it doesn't know, it says so.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://app.outboardbuddy.net/signin">Sign in</a>
+        <a class="btn" href="mailto:simonh@outboardbuddy.net">Talk to us</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Built for people who fix outboards for a living</h2>
+      <div class="grid">
+        <div class="card"><h3>Bench techs</h3><p>Engine on the stand, no codes, customer waiting. What to check next, and the figure it should read.</p></div>
+        <div class="card"><h3>Parts and counter staff</h3><p>The right part number for the engine actually in front of you, not the one the customer thinks they've got.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Pin the engine.</strong> Serial, model code or model. It works out exactly which engine it is before it answers anything.</li>
+        <li><strong>Describe the fault.</strong> In your own words, the way you'd say it to the next bay.</li>
+        <li><strong>Get the next step.</strong> The test to do, the figure to check against, and the part to order, for that engine.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>What it won't do</h2>
+      <p>It won't guess the engine. It won't quote a figure until it knows which engine you've got. And it won't make something up to fill a gap. You'll get "I don't know" instead.</p>
+    </section>
+
+    <section>
+      <h2>Coverage</h2>
+      <p>Mercury and Yamaha outboards, two-stroke and four-stroke. Ask about anything else and it will tell you plainly that it can't help yet.</p>
+      <p class="quiet">Built in a working UK outboard workshop and used on real jobs every day.</p>
+    </section>
+
+    <section>
+      <h2>Distributors and support desks</h2>
+      <p>Run a support desk or a dealer network? We work with distributors to put Outboard Buddy in front of their technicians. <a href="mailto:simonh@outboardbuddy.net">Get in touch</a>.</p>
+    </section>
+
+    <footer>
+      <div class="links"><a href="https://app.outboardbuddy.net/signin">Sign in</a><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a><a href="mailto:simonh@outboardbuddy.net">Contact</a></div>
+      <p>Outboard Buddy is a product of Marine Imports UK Limited, registered in England and Wales (06278210).</p>
+      <p>Mercury and Yamaha are trademarks of their respective owners. Outboard Buddy is independent and not affiliated with either.</p>
+    </footer>
+  </div>
+</body>
+</html>
